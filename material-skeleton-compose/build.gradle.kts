@@ -25,6 +25,11 @@ android {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
+    kotlin {
+        sourceSets.all {
+            languageSettings.enableLanguageFeature("ContextReceivers")
+        }
+    }
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_17.toString()
     }
