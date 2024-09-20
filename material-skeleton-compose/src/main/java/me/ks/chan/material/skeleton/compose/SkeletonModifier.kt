@@ -13,6 +13,7 @@ import androidx.compose.ui.node.DrawModifierNode
 import androidx.compose.ui.node.LayoutModifierNode
 import androidx.compose.ui.node.ModifierNodeElement
 import androidx.compose.ui.node.invalidateDraw
+import androidx.compose.ui.node.invalidateMeasurement
 import androidx.compose.ui.platform.InspectorInfo
 import androidx.compose.ui.unit.Constraints
 import kotlinx.coroutines.delay
@@ -148,6 +149,7 @@ private class SkeletonNode(
                 flow.collect {
                     invalidateDraw()
                 }
+                invalidateMeasurement()
             }
         }
     }
