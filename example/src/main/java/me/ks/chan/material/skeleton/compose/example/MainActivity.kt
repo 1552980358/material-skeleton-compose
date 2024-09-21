@@ -10,7 +10,9 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import me.ks.chan.material.skeleton.compose.example.ui.nav.Home
+import me.ks.chan.material.skeleton.compose.example.ui.nav.Welcome
 import me.ks.chan.material.skeleton.compose.example.ui.screen.home.HomeScreen
+import me.ks.chan.material.skeleton.compose.example.ui.screen.welcome.WelcomeScreen
 import me.ks.chan.material.skeleton.compose.example.ui.theme.MaterialskeletoncomposeTheme
 
 class MainActivity: ComponentActivity() {
@@ -35,5 +37,11 @@ private fun Layout() {
         startDestination = Home::class,
     ) {
         composable<Home> { HomeScreen() }
+
+        composable<Welcome> {
+            WelcomeScreen(
+                back = navController::navigateUp
+            )
+        }
     }
 }
