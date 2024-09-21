@@ -54,6 +54,7 @@ dependencies {
     androidTestImplementation(androidxComposeBom)
 
     api(libs.bundles.app)
+    ksp(libs.material.symbols.compose.ksp)
     testImplementation(libs.bundles.test)
     debugImplementation(libs.bundles.debug)
     androidTestImplementation(libs.bundles.android.test)

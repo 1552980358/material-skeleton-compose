@@ -9,6 +9,7 @@ androidx-activity = "1.9.2"
 androidx-compose-bom = "2024.09.01"
 androidx-navigation = "2.8.1"
 kotlinx-serialization = "1.7.1"
+material-symbols-compose = "1.0.0-beta01"
 
 androidx-junit = "1.2.1"
 androidx-espresso = "3.6.1"
@@ -25,6 +26,9 @@ androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "u
 androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "androidx-lifecycle" }
 androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "androidx-navigation" }
 jetbrains-kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinx-serialization" }
+material-symbols-compose-annotation = { group = "com.github.1552980358.material-symbols-compose", name = "annotation", version.ref = "material-symbols-compose" }
+
+material-symbols-compose-ksp = { group = "com.github.1552980358.material-symbols-compose", name = "ksp", version.ref = "material-symbols-compose" }
 
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 
@@ -46,6 +50,7 @@ app = [
     "androidx-lifecycle-runtime-ktx",
     "androidx-navigation-compose",
     "jetbrains-kotlinx-serialization-json",
+    "material-symbols-compose-annotation",
 ]
 test = [
     "junit",
