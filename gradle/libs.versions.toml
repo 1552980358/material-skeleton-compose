@@ -7,6 +7,7 @@ androidx-lifecycle = "2.8.5"
 androidx-activity = "1.9.2"
 androidx-compose-bom = "2024.09.01"
 androidx-navigation = "2.8.1"
+kotlinx-serialization = "1.7.1"
 
 androidx-junit = "1.2.1"
 androidx-espresso = "3.6.1"
@@ -22,6 +23,7 @@ androidx-compose-ui-graphics = { group = "androidx.compose.ui", name = "ui-graph
 androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
 androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "androidx-lifecycle" }
 androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "androidx-navigation" }
+jetbrains-kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinx-serialization" }
 
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 
@@ -42,6 +44,7 @@ app = [
     "androidx-compose-ui-tooling-preview",
     "androidx-lifecycle-runtime-ktx",
     "androidx-navigation-compose",
+    "jetbrains-kotlinx-serialization-json",
 ]
 test = [
     "junit",
@@ -66,4 +69,5 @@ android-application = { id = "com.android.application", version.ref = "agp" }
 android-library = { id = "com.android.library", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 jetbrains-kotlin-compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+jetbrains-kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 maven-publish = { id = "maven-publish" }
