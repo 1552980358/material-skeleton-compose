@@ -4,7 +4,7 @@ kotlin = "2.0.20"
 kotlin-symbol-processing = "2.0.20-1.0.25"
 
 androidx-core = "1.13.1"
-androidx-lifecycle = "2.8.5"
+androidx-lifecycle = "2.8.6"
 androidx-activity = "1.9.2"
 androidx-compose-bom = "2024.09.01"
 androidx-navigation = "2.8.1"
